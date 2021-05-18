@@ -1,17 +1,17 @@
-﻿<Window x:Class="Filmagine.Register"
+﻿<Window x:Class="Movieve.Views.Login"
+        x:Name="LoginPanel"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Filmagine"
-        mc:Ignorable="d" Title="Register" Height="800" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-
+        xmlns:local="clr-namespace:Movieve.Views"
+        mc:Ignorable="d" Title="Login" Height="800" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
         <ResourceDictionary>
-            <BitmapImage x:Key="Image1" UriSource="photo3.jpg"></BitmapImage>
-            <BitmapImage x:Key="Image2" UriSource="photo2.jpg"></BitmapImage>
-            <BitmapImage x:Key="Image3" UriSource="photo1.jpg" ></BitmapImage>
-            <BitmapImage x:Key="Image4" UriSource="photo4.jpg"></BitmapImage>
+            <BitmapImage x:Key="Image1" UriSource="ImageFiles\photo3.jpg"></BitmapImage>
+            <BitmapImage x:Key="Image2" UriSource="ImageFiles\photo2.jpg"></BitmapImage>
+            <BitmapImage x:Key="Image3" UriSource="ImageFiles\photo1.jpg" ></BitmapImage>
+            <BitmapImage x:Key="Image4" UriSource="ImageFiles\photo4.jpg"></BitmapImage>
         </ResourceDictionary>
 
     </Window.Resources>
@@ -59,13 +59,14 @@
         </Image>
         <Border x:Name="panelBorder" Background="Black" Opacity="0.7" Margin="297,226,283,215" CornerRadius="15" BorderThickness="2">
             <Grid>
-                <Image Source="account.png" Margin="46,69,510,186"/>
-                <Image Source="password.png" Margin="46,163,510,100"/>
-                <TextBox Name="UsernameEmailTextBox" Foreground="White" MaxLength="10" Text="{Binding User.Name}" Margin="135,69,180,199" FontSize="25" TextWrapping="Wrap"></TextBox>
-                <PasswordBox Name="PasswordBoxx" MaxLength="16" Foreground="White" Margin="135,171,180,107" FontSize="25"></PasswordBox>
-                <Button Command="{Binding LoginCommand}" Name="LoginBtn" Content="Log In" Foreground="White" Margin="223,239,241,47" Height="Auto"></Button>
-                <TextBlock x:Name="RegisterTxtBx" Text="Don't have an account?" FontSize="18" Margin="171,286,163,10" Foreground="White" VerticalAlignment="Center"></TextBlock>
-                <Label Name="RegisterLbl" Content="Register" Foreground="DodgerBlue" FontSize="18" Margin="359,281,145,-2" MouseEnter="RegisterLbl_MouseEnter" MouseLeave="RegisterLbl_MouseLeave"/>
+                <Image Source="ImageFiles\account.png" Margin="46,69,510,186"/>
+                <Image Source="ImageFiles\password.png" Margin="46,163,510,100"/>
+                <TextBox Name="UsernameEmailTextBox" Foreground="White" MaxLength="20" Text="{Binding Username}" Margin="135,69,180,199" FontSize="25" TextWrapping="Wrap"></TextBox>
+                <TextBox Name="PasswordBoxx" MaxLength="16" Text="{Binding Password}" Foreground="White" Margin="135,171,180,107" FontSize="25"></TextBox>
+                <Button  Command="{Binding LoginCommand}" 
+                CommandParameter="{Binding ElementName=LoginPanel}"  Name="LoginBtn" Content="Log In" Foreground="White" Margin="46,244,418,42" Height="Auto">
+                </Button>
+                <Button Command="{Binding GuestCommand}" CommandParameter="{Binding ElementName=LoginPanel}"  Name="GuestBtn" Content="I am Guest" Foreground="White" Margin="350,244,114,42" Height="Auto"></Button>
             </Grid>
             <Border.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
