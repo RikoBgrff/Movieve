@@ -8,23 +8,33 @@
         x:Class="Movieve.MainWindow"
         x:Name="GuestWindow"
         mc:Ignorable="d"
-        Title="Movieve" Height="800" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Background="#101419">
-        <TabControl>
-            <TabItem FontSize="60" Width="100" Header="Home" Style="{DynamicResource MaterialDesignNavigationRailTabItem}" Foreground="White"  >
-                <WrapPanel Background="#182130" Margin="0" >
-                    <local:MovieHomePage Margin="25" />
-                    <local:MovieHomePage Margin="5"/>
-                    <local:MovieHomePage Margin="5"/>
-                    <local:MovieHomePage Margin="5"/>
-                    <local:MovieHomePage Margin="5"/>
-                    <local:MovieHomePage Margin="5"/>
-                    <local:MovieHomePage Margin="5"/>
-                </WrapPanel>
-            </TabItem>
-            <TabItem FontSize="10" Width="100" Header="Search" Style="{DynamicResource MaterialDesignNavigationRailTabItem}" Background="#151C29"/>
-            <TabItem FontSize="60" Header="Cinema" Width="100" Style="{DynamicResource MaterialDesignNavigationRailTabItem}" Background="#151C29"/>
-        </TabControl>
-        <!--<TextBox x:Name="SearchTextBox" Margin="214,10,0,721" FontSize="50" Foreground="#FF653AB7" Background="Yellow"/>-->
-    </Grid>
+        Title="Movieve" Height="1000" Width="1440" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Border BorderThickness="1" BorderBrush="#673AB7">
+
+        <Grid Background="Black">
+            <TabControl Background="#673AB7">
+                <TabItem FontSize="60" Width="100" Header="Home" Style="{DynamicResource MaterialDesignNavigationRailTabItem}">
+                    <Grid>
+                        <WrapPanel Background="Black">
+                            <local:MovieHomePage Margin="10,10,5,10" />
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                            <local:MovieHomePage Margin="5"/>
+                        </WrapPanel>
+                        <local:HomePageMovieBig HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="1426" Height="461" Margin="0,0,0,92" ></local:HomePageMovieBig>
+
+                    </Grid>
+                </TabItem>
+                <TabItem FontSize="10" Width="100" Header="Search" Style="{DynamicResource MaterialDesignNavigationRailTabItem}" Background="#151C29"/>
+                <TabItem FontSize="60" Header="Cinema" Width="100" Style="{DynamicResource MaterialDesignNavigationRailTabItem}" Background="#151C29"/>
+            </TabControl>
+            <!--<TextBox x:Name="SearchTextBox" Margin="214,10,0,721" FontSize="50" Foreground="#FF653AB7" Background="Yellow"/>-->
+        </Grid>
+    </Border>
 </Window>
