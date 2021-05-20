@@ -23,7 +23,6 @@
             </Grid>
             <TextBlock Text="{Binding Genre}" 
                    FontFamily="Mohavie Medium" Margin="10,220,10,10" FontSize="10" Foreground="White"></TextBlock>
-
         </Grid>
     </Border>
 </UserControl>

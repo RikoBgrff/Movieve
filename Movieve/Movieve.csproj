@@ -109,6 +109,7 @@
     <Compile Include="Services\Authentication\UserAuthentication.cs" />
     <Compile Include="Services\GlobalOperations\SendRequest.cs" />
     <Compile Include="Services\Serialization\JsonSerialization.cs" />
+    <Compile Include="Services\Serialization\MovieSerialization.cs" />
     <Compile Include="ViewModels\GuestViewModel.cs" />
     <Compile Include="ViewModels\HomePageMovieBigViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -227,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\ImageFiles\dotPng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\ImageFiles\ifNotFound.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

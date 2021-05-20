@@ -11,7 +11,7 @@
             <Image Source="ImageFiles\kvp.jpg" HorizontalAlignment="Left"></Image>
             <TextBlock Text="KURTLAR VADISI" Foreground="White" FontSize="50" FontFamily="Montserrat Thin" Margin="264,10,46,372" />
             <TextBlock Style="{DynamicResource TextBlockStyleBigUserControl}"  Name="Genre" Text="Action,Crime,Drama" Margin="358,86,736,348" />
-            <TextBlock Style="{DynamicResource TextBlockStyleBigUserControl}" Name="Year" Text="2003-2005 " TextAlignment="Right" Margin="264,86,1074,348"/>
+            <TextBlock Style="{DynamicResource TextBlockStyleBigUserControl}" Name="Year" Text="2003-2005 " TextAlignment="Right" Margin="257,86,1081,348"/>
             <TextBlock Style="{DynamicResource TextBlockStyleBigUserControl}" Name="Plot" TextWrapping="Wrap" Text="The Valley of The Wolves series is produced by Osman Sinav which explains Turkish mafia related with external international powers. The series lasted 97 episodes. The header character is Polat Alemdar and his mafia crew. Polat is an agent who tries to destroy whole Turkish Mafia assigned by KGT (agency). Also , as long as Polat digs the deep-side of the mafia he learns bitter truths about his past and his family. Today Valley of The Wolves still goes on with many character substitutions and with different names." Margin="259,130,736,111"/>
             <Button Content="Play Trailer" Height="Auto" Opacity="0.9" Margin="264,352,1031,64"/>
         </Grid>

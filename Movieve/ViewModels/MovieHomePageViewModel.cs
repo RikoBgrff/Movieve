@@ -53,6 +53,7 @@ namespace Movieve.ViewModels
             }
         }
 
+
         public MovieHomePageViewModel()
         {
             SendRequest sender = new SendRequest();

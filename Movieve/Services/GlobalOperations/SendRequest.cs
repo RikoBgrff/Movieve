@@ -30,7 +30,7 @@ namespace Movieve.Services
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
+                return @"ImageFiles\ifNotFound.jpg";
             }
         }
         public string GetTitle(string source)
@@ -47,7 +47,7 @@ namespace Movieve.Services
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
+                return "Not Found";
             }
         }
         public string GetGenre(string source)
@@ -64,7 +64,7 @@ namespace Movieve.Services
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
+                return "Not Found";
             }
         }
         public string GetYear(string source)
@@ -75,14 +75,34 @@ namespace Movieve.Services
                 response = http.GetAsync($@"http://www.omdbapi.com/?apikey=e4d8a8d9&s={source}&plot=full").Result;
                 var str = response.Content.ReadAsStringAsync().Result;
                 Data = JsonConvert.DeserializeObject(str);
-                string title = Data.Search[0].Year;
-                return title;
+                string year = Data.Search[0].Year;
+                return year;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
+                return "Not Found";
             }
         }
+        public string GetPlot(string source)
+        {
+            try
+            {
+                HttpResponseMessage response = new HttpResponseMessage();
+                response = http.GetAsync($@"http://www.omdbapi.com/?apikey=e4d8a8d9&t={source}&plot=full").Result;
+                var str = response.Content.ReadAsStringAsync().Result;
+                Data = JsonConvert.DeserializeObject(str);
+                string plot = Data.Plot;
+
+                MessageBox.Show(plot);
+                return plot;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "Not Found";
+            }
+        }
+
     }
 }
