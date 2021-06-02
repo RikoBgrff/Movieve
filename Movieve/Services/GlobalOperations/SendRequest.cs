@@ -25,12 +25,15 @@ namespace Movieve.Services
                 var str = response.Content.ReadAsStringAsync().Result;
                 Data = JsonConvert.DeserializeObject(str);
                 string poster = Data.Search[0].Poster;
+                if (poster.Length <= 0)
+                {
+                return @"ifNotFound.jpg";
+                }
                 return poster;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
-                return @"ImageFiles\ifNotFound.jpg";
+                return @"ifNotFound.jpg";
             }
         }
         public string GetTitle(string source)
@@ -44,10 +47,9 @@ namespace Movieve.Services
                 string title = Data.Search[0].Title;
                 return title;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
-                return "Not Found";
+                return "Title";
             }
         }
         public string GetGenre(string source)
@@ -61,10 +63,9 @@ namespace Movieve.Services
                 string genre = Data.Genre;
                 return genre;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
-                return "Not Found";
+                return "Genre";
             }
         }
         public string GetYear(string source)
@@ -78,10 +79,9 @@ namespace Movieve.Services
                 string year = Data.Search[0].Year;
                 return year;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
-                return "Not Found";
+                return "Year";
             }
         }
         public string GetPlot(string source)
@@ -93,16 +93,16 @@ namespace Movieve.Services
                 var str = response.Content.ReadAsStringAsync().Result;
                 Data = JsonConvert.DeserializeObject(str);
                 string plot = Data.Plot;
-
-                MessageBox.Show(plot);
+                if (plot.Length <= 0)
+                {
+                    return "Not Found";
+                }
                 return plot;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
-                return "Not Found";
+                return "Plot";
             }
         }
-
     }
 }

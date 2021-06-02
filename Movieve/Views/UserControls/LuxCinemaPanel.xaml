@@ -1,0 +1,111 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Movieve.Views" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+        Height="800" Width="1050">
+    <Grid Background="White">
+        <Image Source="luxCinema.jpg" Stretch="UniformToFill" ></Image>
+        <Button  Foreground="White" Margin="254,492,672,194" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-10.977"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="11.056"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="460,297,466,389" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto">
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="768,490,158,196" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="13.804"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-14.004"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="593,488,333,198" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.481"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.474"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="884,297,42,389" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="24.963"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-26.534"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="416,494,510,192" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-3.699"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="3.685"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="384,297,542,389" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto">
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="50,303,876,383" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-24.351"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="25.797"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="138,303,788,383" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-24.351"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="25.797"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="976,294,-50,392" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="29.639"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-32.431"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="556,297,370,389" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto">
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+        <Button  Foreground="White" Margin="643,297,283,389" Background="{x:Null}" BorderBrush="{x:Null}" Click="SearchPanelOn" Height="Auto">
+            <materialDesign:PackIcon Kind="Seat" Height="70" Width="70"/>
+        </Button>
+    </Grid>
+</UserControl>

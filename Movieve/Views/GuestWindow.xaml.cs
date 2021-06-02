@@ -26,6 +26,29 @@ namespace Movieve
             this.DataContext = new GuestViewModel();
             InitializeComponent();
         }
-
+        public void SearchPanelOn()
+        {
+            SearchPanel.Visibility = Visibility.Visible;
+        }
+        private void SearchPanelOn(object sender, RoutedEventArgs e)
+        {
+            SearchPanelOn();
+        }
+        private void SearchPanelOn(object sender, MouseButtonEventArgs e)
+        {
+            SearchPanelOn();
+        }
+        public void SettingsPanelOn()
+        {
+            SearchPanel.Visibility = Visibility.Collapsed;
+        }
+        private void SettingsPanelOn(object sender, MouseButtonEventArgs e)
+        {
+            SettingsPanelOn();
+        }
+        private void SettingsPanelOn(object sender, RoutedEventArgs e)
+        {
+            SettingsPanelOn();
+        }
     }
 }

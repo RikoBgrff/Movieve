@@ -28,6 +28,10 @@ namespace Movieve.Command
             _canExecute = canExecute;
         }
 
+        public RelayCommand(object v)
+        {
+        }
+
         public bool CanExecute(object parameter)
         {
             return _canExecute == null ? true : _canExecute.Invoke(parameter);

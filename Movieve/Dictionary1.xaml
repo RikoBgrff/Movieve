@@ -6,4 +6,31 @@
         <Setter Property="FontSize" Value="15"></Setter>
         <Setter Property="Foreground" Value="#673AB7"></Setter>
      </Style>
+    <Style TargetType="Label" x:Key="LabelStyle">
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Label.Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard TargetProperty="Opacity" RepeatBehavior="Forever" AutoReverse="True">
+                            <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0.3" To="1" Duration="0:0:2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Image" x:Key="ImageStyle">
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Image.Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard TargetProperty="Opacity" RepeatBehavior="Forever" AutoReverse="True">
+                            <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0.8" To="1" Duration="0:0:2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
 </ResourceDictionary>

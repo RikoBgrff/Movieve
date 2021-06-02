@@ -57,9 +57,9 @@ namespace Movieve.ViewModels
         public MovieHomePageViewModel()
         {
             SendRequest sender = new SendRequest();
-            Poster = sender.GetPoster("Leon");
-            Title = sender.GetTitle("Leon");
-            Genre = sender.GetYear("Leon");
+            Poster = sender.GetPoster("Kolpacino");
+            Title = sender.GetTitle("Kolpacino");
+            Genre = sender.GetYear("Kolpacino");
         }
         Random rd = new Random();
         public string Randomizer()

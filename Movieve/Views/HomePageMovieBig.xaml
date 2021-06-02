@@ -6,7 +6,6 @@
              mc:Ignorable="d" 
             Height="460" Width="1420">
     <Border BorderBrush="#673AB7" BorderThickness="1">
-
         <Grid Background="Black">
             <Image Source="ImageFiles\kvp.jpg" HorizontalAlignment="Left"></Image>
             <TextBlock Text="KURTLAR VADISI" Foreground="White" FontSize="50" FontFamily="Montserrat Thin" Margin="264,10,46,372" />
