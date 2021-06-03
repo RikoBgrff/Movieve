@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Movieve.Views
+namespace Movieve.Views.UserControls
 {
     /// <summary>
-    /// Interaction logic for Underline.xaml
+    /// Interaction logic for LuxCinemaUc.xaml
     /// </summary>
-    public partial class Underline : UserControl
+    public partial class LuxCinemaUc : UserControl
     {
-        public Underline()
+        public LuxCinemaUc()
         {
             InitializeComponent();
         }

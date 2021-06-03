@@ -27,5 +27,10 @@ namespace Movieve.Views.UserControls
             InitializeComponent();
         }
 
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            PlayTrailerBtn.Visibility = Visibility.Visible;
+            dot.Visibility = Visibility.Visible;
+        }
     }
 }

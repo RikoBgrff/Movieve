@@ -114,47 +114,20 @@
     <Compile Include="Services\Serialization\JsonSerialization.cs" />
     <Compile Include="Services\Serialization\MovieSerialization.cs" />
     <Compile Include="ViewModels\GuestViewModel.cs" />
-    <Compile Include="ViewModels\HomePageMovieBigViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
-    <Compile Include="ViewModels\MovieHomePageViewModel.cs" />
+    <Compile Include="ViewModels\SelectCinemaPanelUCViewModel.cs" />
     <Compile Include="ViewModels\TrailerWindowViewModel.cs" />
-    <Compile Include="Views\UserControls\CinemaPanelUC.xaml.cs">
-      <DependentUpon>CinemaPanelUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomePageMovieBig.xaml.cs">
-      <DependentUpon>HomePageMovieBig.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MovieHomePage.xaml.cs">
-      <DependentUpon>MovieHomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TrailerWindow.xaml.cs">
       <DependentUpon>TrailerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Underline.xaml.cs">
-      <DependentUpon>Underline.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\LuxCinemaPanel.xaml.cs">
-      <DependentUpon>LuxCinemaPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\SearchPanelUC.xaml.cs">
-      <DependentUpon>SearchPanelUC.xaml</DependentUpon>
+    <Compile Include="Views\UserControls\SearchPanelUc.xaml.cs">
+      <DependentUpon>SearchPanelUc.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\SearchPanelUCViewModel.cs" />
-    <Compile Include="Views\UserControls\SelectCinemaPanelUC.xaml.cs">
-      <DependentUpon>SelectCinemaPanelUC.xaml</DependentUpon>
-    </Compile>
     <Page Include="Dictionary1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\UserControls\CinemaPanelUC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\HomePageMovieBig.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,27 +148,11 @@
       <DependentUpon>GuestWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\MovieHomePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\TrailerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Underline.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\UserControls\LuxCinemaPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\UserControls\SearchPanelUC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\UserControls\SelectCinemaPanelUC.xaml">
+    <Page Include="Views\UserControls\SearchPanelUc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -279,13 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\UserControls\ifNotFound.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\UserControls\cinema.jpg" />
-    <Resource Include="Views\UserControls\luxCinema.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\UserControls\cinemaHall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

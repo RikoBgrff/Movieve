@@ -40,23 +40,7 @@
                         <TextBlock Text="Search" FontSize="20" Margin="10" VerticalAlignment="Center" Height="24" Width="65" />
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Padding="0"  >
-                    <StackPanel Orientation="Horizontal" MouseLeftButtonDown="SettingsPanelOn">
-                        <Button Foreground="#673AB7" Background="{x:Null}" BorderBrush="{x:Null}">
-                            <materialDesign:PackIcon Kind="Cinema" Height="20" Width="20"/>
-                        </Button>
-                        <TextBlock Text="Cinema" FontSize="20" Margin="10" VerticalAlignment="Center" Height="28" Width="75"/>
-                    </StackPanel>
-                </ListViewItem>
                 <ListView FontSize="15"/>
-                <ListViewItem Padding="0"  >
-                    <StackPanel Orientation="Horizontal" MouseLeftButtonDown="SettingsPanelOn">
-                        <Button Foreground="#673AB7" Background="{x:Null}" BorderBrush="{x:Null}" Click="SettingsPanelOn">
-                            <materialDesign:PackIcon Kind="Settings" Height="20" Width="20"/>
-                        </Button>
-                        <TextBlock Text="Settings" FontSize="20" Margin="10" VerticalAlignment="Center" Height="28" Width="75"/>
-                    </StackPanel>
-                </ListViewItem>
             </StackPanel>
         </Grid>
         <!--#endregion-->

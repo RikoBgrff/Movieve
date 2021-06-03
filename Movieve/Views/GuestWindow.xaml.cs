@@ -38,17 +38,5 @@ namespace Movieve
         {
             SearchPanelOn();
         }
-        public void SettingsPanelOn()
-        {
-            SearchPanel.Visibility = Visibility.Collapsed;
-        }
-        private void SettingsPanelOn(object sender, MouseButtonEventArgs e)
-        {
-            SettingsPanelOn();
-        }
-        private void SettingsPanelOn(object sender, RoutedEventArgs e)
-        {
-            SettingsPanelOn();
-        }
     }
 }

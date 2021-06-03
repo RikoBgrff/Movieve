@@ -9,14 +9,14 @@
     <Grid Background="White">
        <!--#region -->
         <Label Content="Search Movie" FontFamily="Montserrat ExtraLight" Margin="24,10,752,723" FontSize="40" Style="{DynamicResource LabelStyle}"/>
-        <Button Name="SearchButton" Foreground="#673AB7" Background="{x:Null}" BorderBrush="{x:Null}"  Margin="921,82,62,656" Height="Auto" Command="{Binding SearchCommand}">
+        <Button Name="SearchButton" Foreground="#673AB7" Background="{x:Null}" BorderBrush="{x:Null}"  Margin="921,82,62,656" Height="Auto" Click="SearchButton_Click" Command="{Binding SearchCommand}">
             <materialDesign:PackIcon Kind="Search" Height="35" Width="34"/>
         </Button>
         <TextBox x:Name="SearchTextBox"  Style="{StaticResource MaterialDesignOutlinedTextBox}" Text="{Binding SearchedMovie}" Margin="24,82,134,656" Foreground="Black" FontSize="16"></TextBox>
         <!--#endregion-->
         <Grid Background="White" Margin="24,165,78,143">
-            <Border  BorderThickness="2" Margin="410,348,516,123">
-                <materialDesign:PackIcon Kind="Circle" Height="18" Margin="0" Width="18" Foreground="#673AB7"></materialDesign:PackIcon>
+            <Border  BorderThickness="2" Name="dot" Visibility="Collapsed" Margin="410,348,516,123">
+                <materialDesign:PackIcon  Kind="Circle" Height="18" Margin="0" Width="18" Foreground="#673AB7"></materialDesign:PackIcon>
             </Border>
             <Border BorderBrush="{x:Null}" Margin="0,0,638,0">
             <Image Source="{Binding Poster}" Style="{DynamicResource ImageStyle}" Stretch="Fill" >
@@ -72,7 +72,7 @@
                 </TextBlock.ToolTip>
             </TextBlock>
             </Border>
-            <Button Content="Play Trailer" Height="Auto" Opacity="0.9" Margin="421,407,310,40">
+            <Button x:Name="PlayTrailerBtn" Content="Play Trailer" Height="Auto" Visibility="Collapsed" Opacity="0.9" Margin="421,407,310,40">
                 <Button.ToolTip>
                     <TextBlock Text="Watch Trailer of Movie" ToolTipService.ShowDuration="3000"></TextBlock>
                 </Button.ToolTip>
